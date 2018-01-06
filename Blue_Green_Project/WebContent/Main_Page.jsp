@@ -250,6 +250,8 @@
     </div>
 	  
 	  </div>
+	  
+	  
 	      <!-- 하단 페이지 -->
 	    <div class="ui inverted vertical footer segment" style="position: fixed; bottom: 0px; opacity: 0.5; width: 100%;">
 	    <div class="ui container">
