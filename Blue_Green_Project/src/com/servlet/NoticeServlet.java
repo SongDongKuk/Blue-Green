@@ -14,6 +14,7 @@ import com.model.WebDAO;
 @WebServlet("/NoticeServlet")
 public class NoticeServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html; charset=euc-kr");
 		String title = request.getParameter("title");
 		String contents = request.getParameter("contents");
 		HttpSession session = request.getSession();

@@ -186,8 +186,8 @@
 <!-- Following Menu -->
 <div class="ui large top fixed hidden menu">
   <div class="ui container">
-    <a class="active item">Home</a>
-    <a class="item">공지사항</a>
+    <a href="Main_Page.html" class="active item">Home</a>
+    <a href="SelectServlet" class="item">공지사항</a>
     <a class="item">교육신청</a>
     <a class="item">경기안내</a>
     <a class="item">커뮤니티</a>
@@ -225,7 +225,7 @@
           <i class="sidebar icon"></i>
         </a>
         <a href="Main_Page.html" class="active item">Home</a>
-        <a href="Notice_Page.jsp" class="item">공지사항</a>
+        <a href="SelectServlet" class="item">공지사항</a>
     	<a class="item">교육신청</a>
    	 	<a class="item">경기안내</a>
    	 	<a class="item">커뮤니티</a>

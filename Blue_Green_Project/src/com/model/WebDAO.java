@@ -101,7 +101,7 @@ public int delectBoard(int num) throws Exception {
 }
 public int updateBoard(String title, String contents, int num) throws Exception {
 	getConnection();
-	pst = conn.prepareStatement("update notice_board set title=? contents=? where num=?");
+	pst = conn.prepareStatement("update notice_board set title=?, contents=? where num=?");
 	pst.setString(1, title);
 	pst.setString(2, contents);
 	pst.setInt(3, num);

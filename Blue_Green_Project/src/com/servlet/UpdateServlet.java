@@ -15,7 +15,7 @@ import com.model.WebDAO;
 @WebServlet("/UpdateServlet")
 public class UpdateServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		HttpSession session = request.getSession();
+		HttpSession session = request.getSession();		
 		NoticeDTO dto = (NoticeDTO)session.getAttribute("dto");
 		String title = request.getParameter("title");
 		String contents = request.getParameter("contents");
@@ -24,10 +24,10 @@ public class UpdateServlet extends HttpServlet {
 		try {
 			int cnt = dao.updateBoard(title,contents,dto.getNum());
 			if(cnt >0) {
-				response.sendRedirect("notice_board/NoticeBoard.jsp");
+				response.sendRedirect("notice_board/Notice_Page.jsp");
 			}else {
-				System.err.println("삭제실패");
-				response.sendRedirect("notice_board/NoticeBoard.jsp");
+				System.err.println("업로드실패");
+				response.sendRedirect("notice_board/Notice_Page.jsp");
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

@@ -8,6 +8,6 @@
 </head>
 <body>
 	<%
-	response.sendRedirect("DeleteServlet"); %>
+	response.sendRedirect("../DeleteServlet"); %>
 </body>
 </html>
