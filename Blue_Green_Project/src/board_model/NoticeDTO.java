@@ -1,4 +1,4 @@
-package com.model;
+package board_model;
 
 public class NoticeDTO {
 	private int num;

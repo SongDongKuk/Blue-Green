@@ -1,4 +1,4 @@
-package com.model;
+package board_model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

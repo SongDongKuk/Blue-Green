@@ -1,4 +1,4 @@
-package com.servlet;
+package board_servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,34 +8,29 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.model.WebDAO;
+import board_model.NoticeDTO;
+import board_model.WebDAO;
 
+@WebServlet("/DeleteServlet")
+public class DeleteServlet extends HttpServlet {
 
-@WebServlet("/NoticeServlet")
-public class NoticeServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String title = request.getParameter("title");
-		String contents = request.getParameter("contents");
 		HttpSession session = request.getSession();
-		
-		String name = (String)session.getAttribute("name");
-		
+		NoticeDTO dto = (NoticeDTO)session.getAttribute("dto");
 		WebDAO dao = new WebDAO();
 		
-		int cnt;
 		try {
-			cnt = dao.insert(name, title, contents);
-			if(cnt> 0) {
-				response.sendRedirect("SelectServlet");
+			int cnt = dao.delectBoard(dto.getNum());
+			if(cnt>0) {
+				response.sendRedirect("notice_board/NoticeBoard.jsp");
 			}else {
-				response.sendRedirect("SelectServlet");
+				System.err.println("삭제실패");
+				response.sendRedirect("notice_board/NoticeBoard.jsp");
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
 		
 		
 		

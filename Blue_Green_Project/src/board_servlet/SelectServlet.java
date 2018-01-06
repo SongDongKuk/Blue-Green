@@ -1,4 +1,4 @@
-package com.servlet;
+package board_servlet;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.model.NoticeDTO;
-import com.model.WebDAO;
+import board_model.NoticeDTO;
+import board_model.WebDAO;
 
 
 @WebServlet("/SelectServlet")
