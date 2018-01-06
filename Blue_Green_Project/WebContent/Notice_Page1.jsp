@@ -1,4 +1,4 @@
-<%@page import="board_model.WebDAO"%>
+<%@page import="com.model.WebDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
@@ -130,30 +130,8 @@
         background-size: cover !important;
 	}
 	
-	.menubar li ul {
-		background: rgb(109,109,109);
-		display:none;  /* 평상시에는 서브메뉴가 안보이게 하기 */
-		height:auto;
-		padding:0px;
-		margin:0px;
-		border:0px;
-		position:absolute;
-		width:200px;
-		z-index:200;
-	}
-	.menubar li:hover ul {
-		display:block;   /* 마우스 커서 올리면 서브메뉴 보이게 하기 */
-	}
-	.footer.segment{
-		padding: 1em;
-	}
-	
 	.masthead h1.ui.header{
 		margin-top: 1em;
-	}
-	
-	.footer.segment{
-		padding: 1em;
 	}
 
 }
@@ -288,6 +266,7 @@
 					<td>${m.hits}</td>
 				</tr>
 			  </c:forEach>
+			  
             </tbody>
           </table>
         </div>
@@ -305,7 +284,7 @@
   
   
     
-	    <div class="ui inverted vertical footer segment" style="position: fixed; bottom: 0px; opacity: 0.5; width: 100%";>
+	    <div class="ui inverted vertical footer segment">
 	    <div class="ui container">
 	      <div class="ui stackable inverted divided equal height stackable grid">
 	        <div class="three wide column">

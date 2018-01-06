@@ -150,6 +150,10 @@
 		background-image: url('images/bg.jpg') !important;
         background-size: cover !important;
 	}
+	
+	.footer.segment{
+		padding: 1em;
+	}
 
   </style>
   <script src="examples/assets/library/jquery.min.js"></script>
@@ -177,7 +181,6 @@
       $('.ui.sidebar')
         .sidebar('attach events', '.toc.item')
       ;
-
     })
   ;
   </script>
@@ -185,6 +188,7 @@
 <body>
 <!-- Following Menu -->
 <div class="ui large top fixed hidden menu">
+<<<<<<< HEAD
   <div class="ui container">
     <a href="Main_Page.html" class="active item">Home</a>
     <a href="SelectServlet" class="item">공지사항</a>
@@ -192,6 +196,13 @@
     <a class="item">경기안내</a>
     <a class="item">커뮤니티</a>
     <a class="item">도움말</a>
+  <div class="ui container menubar">
+    		<a class="active item">Home</a>
+    		<a class="item">공지사항</a>
+    		<a class="item">교육신청</a>
+    		<a class="browse item visible active">경기안내</a>    		 			
+    		<a class="item">커뮤니티</a>
+    		<a class="item">도움말</a>       
     <div class="right menu">
       <div class="item">
         <a class="ui button">Log in</a>
@@ -207,7 +218,7 @@
 
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
-  <a href="Main_Page.html" class="active item">Home</a>
+  	<a href="Main_Page.jsp" class="active item">Home</a>
 	<a href="SelectServlet" class="item">공지사항</a>
     <a class="item">교육신청</a>
     <a class="item">경기안내</a>
@@ -220,7 +231,7 @@
   <div class="ui inverted vertical masthead center aligned segment" style="background: none;">
 
     <div class="ui container" id="top_menu">
-      <div class="ui large secondary inverted pointing menu">
+      <div class="ui large secondary inverted pointing menu menubar">
         <a class="toc item">
           <i class="sidebar icon"></i>
         </a>
@@ -230,9 +241,15 @@
    	 	<a class="item">경기안내</a>
    	 	<a class="item">커뮤니티</a>
    	 	<a class="item">도움말</a>
+    		<a href="Main_Page.jsp" class="active item">Home</a>
+    		<a href="Notice_Page.jsp" class="item">공지사항</a>
+    		<a class="item">교육신청</a>
+    		<a class="browse item visible">경기안내</a>
+    		<a class="item">커뮤니티</a>
+    		<a class="item">도움말</a>
         <div class="right item">
           <a class="ui inverted button">Log in</a>
-          <a class="ui inverted button">Sign Up</a>
+          <a class="ui inverted button">Sign Up</a>          
         </div>
       </div>
     </div>
@@ -245,11 +262,10 @@
       <h1><p id="main_text">WE CAN MAKE SPORT BETTER<p></h1>
       <div class="ui huge primary button">START<i class="right arrow icon"></i></div>
     </div>
-
-  
-
 	  
 	  </div>
+	  
+	  
 	      <!-- 하단 페이지 -->
 	    <div class="ui inverted vertical footer segment" style="position: fixed; bottom: 0px; opacity: 0.5; width: 100%;">
 	    <div class="ui container">
