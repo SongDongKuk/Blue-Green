@@ -188,7 +188,7 @@
 <body>
 <!-- Following Menu -->
 <div class="ui large top fixed hidden menu">
-<<<<<<< HEAD
+
   <div class="ui container">
     <a href="Main_Page.html" class="active item">Home</a>
     <a href="SelectServlet" class="item">공지사항</a>
@@ -196,22 +196,7 @@
     <a class="item">경기안내</a>
     <a class="item">커뮤니티</a>
     <a class="item">도움말</a>
-  <div class="ui container menubar">
-    		<a class="active item">Home</a>
-    		<a class="item">공지사항</a>
-    		<a class="item">교육신청</a>
-    		<a class="browse item visible active">경기안내</a>    		 			
-    		<a class="item">커뮤니티</a>
-    		<a class="item">도움말</a>       
-    <div class="right menu">
-      <div class="item">
-        <a class="ui button">Log in</a>
-      </div>
-      <div class="item">
-        <a class="ui primary button">Sign Up</a>
-      </div>
-    </div>
-  </div>
+</div>
 </div>
 
 
@@ -241,12 +226,6 @@
    	 	<a class="item">경기안내</a>
    	 	<a class="item">커뮤니티</a>
    	 	<a class="item">도움말</a>
-    		<a href="Main_Page.jsp" class="active item">Home</a>
-    		<a href="Notice_Page.jsp" class="item">공지사항</a>
-    		<a class="item">교육신청</a>
-    		<a class="browse item visible">경기안내</a>
-    		<a class="item">커뮤니티</a>
-    		<a class="item">도움말</a>
         <div class="right item">
           <a class="ui inverted button">Log in</a>
           <a class="ui inverted button">Sign Up</a>          

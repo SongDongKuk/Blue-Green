@@ -24,10 +24,10 @@ public class UpdateServlet extends HttpServlet {
 		try {
 			int cnt = dao.updateBoard(title,contents,dto.getNum());
 			if(cnt >0) {
-				response.sendRedirect("notice_board/NoticeBoard.jsp");
+				response.sendRedirect("notice_board/Notice_Page.jsp");
 			}else {
 				System.err.println("삭제실패");
-				response.sendRedirect("notice_board/NoticeBoard.jsp");
+				response.sendRedirect("notice_board/Notice_Page.jsp");
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

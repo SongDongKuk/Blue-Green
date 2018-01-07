@@ -1,4 +1,4 @@
-<%@page import="com.model.WebDAO"%>
+<%@page import="board_model.WebDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -199,7 +199,7 @@
 	<div class="ui large top fixed hidden menu">
 		<div class="ui container">
 			<a href="../Main_Page.jsp" class="item">Home</a> <a
-				href="Notice_Page.jsp" class="active item">공지사항</a> <a class="item">교육신청</a>
+				href="SelectServlet" class="active item">공지사항</a> <a class="item">교육신청</a>
 			<a class="item">경기안내</a> <a class="item">커뮤니티</a> <a class="item">도움말</a>
 			<div class="right menu">
 				<div class="item">
@@ -217,7 +217,7 @@
 	<!-- Sidebar Menu -->
 	<div class="ui vertical inverted sidebar menu">
 		<a href="../Main_Page.jsp" class="item">Home</a> <a
-			href="Notice_Page.jsp" class="active item">공지사항</a> <a class="item">교육신청</a>
+			href="SelectServlet" class="active item">공지사항</a> <a class="item">교육신청</a>
 		<a class="item">경기안내</a> <a class="item">커뮤니티</a> <a class="item">도움말</a>
 	</div>
 
@@ -230,7 +230,7 @@
 				<div class="ui large secondary inverted pointing menu" id="top_menu">
 					<a class="toc item"> <i class="sidebar icon"></i>
 					</a> <a href="../Main_Page.jsp" class="item">Home</a> <a
-						href="Notice_Page.jsp" class="active item">공지사항</a> <a
+						href="SelectServlet" class="active item">공지사항</a> <a
 						class="item">교육신청</a> <a class="item">경기안내</a> <a class="item">커뮤니티</a>
 					<a class="item">도움말</a>
 					<div class="right item">

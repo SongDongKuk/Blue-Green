@@ -1,5 +1,5 @@
-<%@page import="com.model.NoticeDTO"%>
-<%@page import="com.model.WebDAO"%>
+<%@page import="board_model.NoticeDTO"%>
+<%@page import="board_model.WebDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>

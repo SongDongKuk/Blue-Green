@@ -23,9 +23,9 @@ public class SelectServlet extends HttpServlet {
 			ArrayList<NoticeDTO> list= dao.selectAll();
 			if(list!=null) {
 				session.setAttribute("list", list);
-				response.sendRedirect("Notice_Page.jsp");
+				response.sendRedirect("notice_board/Notice_Page.jsp");
 			}else {
-				response.sendRedirect("notice_board/NoticeBoard.jsp");
+				response.sendRedirect("notice_board/Notice_Page.jsp");
 			}
 			
 			

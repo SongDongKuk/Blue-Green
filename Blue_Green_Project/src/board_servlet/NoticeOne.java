@@ -26,9 +26,9 @@ public class NoticeOne extends HttpServlet {
 			NoticeDTO dto = dao.selectOne(code);
 			if(dto != null) {
 				session.setAttribute("dto", dto);
-				response.sendRedirect("notice_board/NoticeView.jsp");
+				response.sendRedirect("notice_board/NoticeView_Page.jsp");
 			}else {
-				response.sendRedirect("notice_board/NoticeBoard.jsp");
+				response.sendRedirect("notice_board/Notice_Page.jsp");
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
